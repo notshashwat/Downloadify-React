@@ -1,0 +1,146 @@
+[
+    {
+      "_id": "64a51c5dfd314b977e517df0",
+      "playlistName": "Rip Chester",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 0,
+          "songName": "Numb",
+          "artistName": "Linkin Park"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 1,
+          "songName": "Super Shy",
+          "artistName": "New Jeans"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 2,
+          "songName": "Mcknight",
+          "artistName": "Mooney Johnston"
+        }
+      ]
+    },
+    {
+      "_id": "64a51c5d66b8a495a4663164",
+      "playlistName": "Carla",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 3,
+          "songName": "Pal Pal dil ke pas",
+          "artistName": "Kishore Kumar"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 4,
+          "songName": "Schmidt",
+          "artistName": "Booker Todd"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 5,
+          "songName": "Hayden",
+          "artistName": "Wanda Brooks"
+        }
+      ]
+    },
+    {
+      "_id": "64a51c5dadb24ae62a2e3c3a",
+      "playlistName": "Zamora",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 6,
+          "songName": "Chen",
+          "artistName": "Rivera Shepherd"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 7,
+          "songName": "Jefferson",
+          "artistName": "Mara Hawkins"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 8,
+          "songName": "Cochran",
+          "artistName": "Lula Mccormick"
+        }
+      ]
+    },
+    {
+      "_id": "64a51c5dc83fa2e02c44bc79",
+      "playlistName": "Imelda",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 9,
+          "songName": "Henry",
+          "artistName": "Estela Wolf"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 10,
+          "songName": "Haney",
+          "artistName": "Holder Bishop"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 11,
+          "songName": "Page",
+          "artistName": "Angelica Wallace"
+        }
+      ]
+    },
+    {
+      "_id": "64a51c5dbbac056b517d3737",
+      "playlistName": "Barron",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 12,
+          "songName": "Dunn",
+          "artistName": "Rutledge Hood"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 13,
+          "songName": "Stout",
+          "artistName": "Chrystal Rios"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 14,
+          "songName": "Waters",
+          "artistName": "Lidia Pitts"
+        }
+      ]
+    },
+    {
+      "_id": "64a51c5d1ba14b29d4eeab1b",
+      "playlistName": "Bettye",
+      "songs": [
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 15,
+          "songName": "Pace",
+          "artistName": "Keisha Wise"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 16,
+          "songName": "Randolph",
+          "artistName": "Norma Gilbert"
+        },
+        {
+          "picture": "http://placehold.it/60x60",
+          "id": 17,
+          "songName": "Wells",
+          "artistName": "Salas Roy"
+        }
+      ]
+    }
+  ]
