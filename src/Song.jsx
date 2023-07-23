@@ -8,7 +8,7 @@ function Song(props){
                 
                 <div className="song">
                 <div className='albumart'>
-                    <img src={props.imgUrl}></img>
+                    <img style={{width:"60px"}}src={props.imgUrl}></img>
                 </div>
                 <div className="musicinfo">
                     <p className="title">{props.songName}</p>
