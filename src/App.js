@@ -60,7 +60,8 @@ class App extends React.Component {
       
       // songs : extractSongs(playlists)
       playlists : [],
-      songs : []
+      songs : [],
+      logged : false
     }
    
     this.checkHandler = this.checkHandler.bind(this)
@@ -69,24 +70,17 @@ class App extends React.Component {
   componentDidMount(){
     
     const token = getHashParams()
-    
+    if(!token){
+      return ;
+    }
+
+
     let playlistData = []
     const url = 'https://api.spotify.com/v1/me/playlists';
     const headers = {
       Authorization: 'Bearer ' + token.access_token
     }
-    // console.log(headers)
-    // [
-    //   {
-    //     "_id": "64a51c5dfd314b977e517df0",
-    //     "playlistName": "Rip Chester",
-    //     "songs": [
-    //       {
-    //         "picture": "http://placehold.it/60x60",
-    //         "id": 0,
-    //         "songName": "Numb",
-    //         "artistName": "Linkin Park"
-    //       },
+
     fetch(url, { headers })
     .then(response => response.json())
     .then(data => {
@@ -110,31 +104,23 @@ class App extends React.Component {
                   "songName" : song.track.name,
                   "artistName" : song.track.artists[0].name
                 })
-                // console.log(song.track.name )
-                // console.log(song.track.artists[0].name )
-                
+         
               });
               playlistData.push(playlistObj)
               this.setState(prevState => {
                 return {playlists : playlistData,
-                        songs : extractSongs(playlistData)}
+                        songs : extractSongs(playlistData),
+                        logged : true}
               })
-              // this.state.playlists.push(playlistObj)
-              // this.state.songs.push(extractSongs([playlistObj]))
-              // console.log("The state is: ",this.state)
-
+      
             })
           
         });
-        // console.log(playlistData[0].songs[0])
-        // this.state = {
-        //   playlists : playlistData,
-        //   songs : songs
-        // }
+
       })
       .catch(error => {
         console.log(error)
-        // handle error
+
       });
   }
   checkHandler(id){
@@ -165,6 +151,9 @@ class App extends React.Component {
     })
     // makeYoutubeCall("Hard To Love")
   }
+  loginHandler(){
+    window.location.replace("http://localhost:8888/api/login");
+  }
 
   render(){
     console.log("rightnow ps is ",this.state.playlists)
@@ -174,7 +163,13 @@ class App extends React.Component {
   
   return (
     <div className="container">
-    
+            <div className='heading'><h1>Downloadify</h1></div>
+            <div style={{ display: (!this.state.logged?'contents':'none') }} >
+              <p style={{alignSelf:'center', fontSize:'1.4rem'}}>It's so empty here :( ... Login to Spotify to download your songs</p>
+             <button style={{ top: "40%", bottom:"unset", position:'relative'}}className="button-28" role="button" onClick={() => this.loginHandler()}>Login</button>
+            </div>
+             {/* <button style={{ display: (checkCnt(this.state.songs)!==0 ? 'block' : 'none') }}  className="button-28" role="button" onClick={() => this.downloadHandler()}>Download</button> */}
+
       {playlistComponents}
      
 
