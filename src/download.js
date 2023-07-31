@@ -8,7 +8,7 @@ function makeYoutubeCall(searchString)
 {
   var opts = {
     maxResults: 1,
-    key: 'AIzaSyDrvoOluABZW337T1KH8Bir583IN4jpxnw'
+    key: process.env.REACT_APP_YOUTUBE_API 
   };
   var resID = "0";
   search(searchString, opts, function(err, results) {
@@ -25,7 +25,7 @@ function processResID(resID){
     url: 'https://youtube-mp36.p.rapidapi.com/dl',
     params: {id: resID}, 
     headers: {
-      'X-RapidAPI-Key': '9e4c4ff602mshd997a4dca249470p1509cejsn59c34d143c1a',
+      'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API,
       'X-RapidAPI-Host': 'youtube-mp36.p.rapidapi.com'
     }
   };

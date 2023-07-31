@@ -152,7 +152,10 @@ class App extends React.Component {
     // makeYoutubeCall("Hard To Love")
   }
   loginHandler(){
-    window.location.replace("http://localhost:8888/api/login");
+    // window.location.replace("http://localhost:8888/api/login");
+    window.location.replace("https://downloadify-spotify-login.onrender.com/api/login");
+    
+    
   }
 
   render(){
