@@ -9,8 +9,14 @@ Make sure to login with the following details in spotify since the spotify api i
       username - projectshashwat03@gmail.com
       password - projectshashwat
 
+Common problem - You are already logged in with your own account on spotify in your browser. Fix - Logout from spotify account in your browser before clicking on "Login"
 
-Instruction to setup the app : 
+Screenshot of App : 
+![image](https://github.com/notshashwat/Downloadify-React/assets/79015749/1a381cec-2537-412f-9793-287163929236)
+
+
+Setup instructions : 
+
 1. Fork and Clone the repo.
 2. Make a new project in spotify developers dashboard and make file /auth/.env for backend variables
    
