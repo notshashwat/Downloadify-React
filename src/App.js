@@ -70,6 +70,7 @@ class App extends React.Component {
   componentDidMount(){
     
     const token = getHashParams()
+    console.log(token);
     if(!token){
       return ;
     }
@@ -168,8 +169,10 @@ class App extends React.Component {
     <div className="container">
             <div className='heading'><h1>Downloadify</h1></div>
             <div style={{ display: (!this.state.logged?'contents':'none') }} >
-              <p style={{alignSelf:'center', fontSize:'1.4rem'}}>It's so empty here :( ... Login to Spotify to download your songs</p>
+              <p style={{alignSelf:'center', fontSize:'1.4rem'}}>Login to Spotify to start downloading your songs!</p>
              <button style={{ top: "40%", bottom:"unset", position:'relative'}}className="button-28" role="button" onClick={() => this.loginHandler()}>Login</button>
+             <p style={{alignSelf:'center', fontSize:'1.2rem'}}>(Please use username:projectshashwat03@gmail.com and password:projectshashwat)</p>
+
             </div>
              {/* <button style={{ display: (checkCnt(this.state.songs)!==0 ? 'block' : 'none') }}  className="button-28" role="button" onClick={() => this.downloadHandler()}>Download</button> */}
 
