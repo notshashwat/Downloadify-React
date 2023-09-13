@@ -48,11 +48,11 @@ Setup instructions :
 
 OAuth 2.0 is used to authenticate with spotify using nodejs
 
-First the user is redirected to spotify login page where they login with spotify, spotify redirects to a prespecified callback url with an authentication code, this authentication code is used get token and fianlly the user is redireted to react front end with the token.
+First the user is redirected to spotify login page where they login with spotify, spotify redirects to a prespecified callback url with an authentication code, this authentication code is used get token and finally the user is redireted to react front end along with the token.
 
-The token is used to fetch playlists and corresponding songs of the user from spotify and displayed on the page, the user and selected from the songs and click download to start the download of selected songs
+The token is used to fetch playlists and corresponding songs of the user from spotify and displayed on the page, the user then select from the songs and click download to start the download of selected songs
 
-After download is pressed , all the selected songs are searched by the string "song name" + " song artist " on youtube using youtube API for finidng the youtube url, this youtube url is passed to Rapid API youtube mp3 downloader (ytjar) which gives a cdn link to download the songs' mp3, which is then used to start the downloads.
+After download is pressed , all the selected songs are searched by the string "song name" + " song artist " on youtube using youtube API for finding the youtube url, this youtube url is passed to Rapid API youtube mp3 downloader (ytjar) which gives a cdn link to download the songs' mp3, which is then used to start the downloads.
 
 ___
 
